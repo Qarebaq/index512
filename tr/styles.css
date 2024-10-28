@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300;400&family=Poppins:wght@200&family=Roboto:wght@900&family=Vazirmatn&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  'Anton', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Vazirmatn', sans-serif;;
+}
+
+
+
+#navbar
+{
+    background: rgb(11, 11, 13,0.7);
+    width: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    backdrop-filter:blur(13px);
+}
+
+
+#navbar h1
+{
+    float: left;
+    padding-top: 0.732vw;
+    padding-bottom: 0.732vw;
+    margin-left: 1.171vw;
+    font-family: sans-serif;
+    font: bold;
+    font-size: 2.343vw;
+}
+
+#navbar label
+{
+    display: none;
+}
+
+#navbar input
+{
+    display: none;
+}
+
+#desktopContent a
+{
+    color: white;
+    float: right;
+    margin: 5px;
+    margin-right: 1.903vw;
+    padding: 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    text-decoration: none;
+ 
+}
+
+#desktopContent a:hover
+{
+    background: rgba(11, 11, 13, 0.418);
+        backdrop-filter:blur(8px);
+        transition:0.2s
+}
+
+a:visited
+{
+    all: inherit;
+}
+
+#content
+{
+    display: none;
+}
+
+@media only screen and (max-width: 768px)
+{
+
+    #navbar h1
+    {
+        font-size: 6vw;
+        margin-left: 1.903vw;
+    }
+
+    #desktopContent
+    {
+        display: none;
+    }
+
+    #navbar img
+    {
+        width: 6vw;
+        height: 6vw;
+        float: left;
+        margin-right: 1.903vw;
+    }
+    
+    #hamButton input[type=checkbox]
+    {
+        -webkit-appearance: none;
+        outline: 0vw;
+        background-repeat: no-repeat;
+        background-color: rgb(22, 142, 135, 0);
+        border: 0vw;
+        width: 6vw;
+        height: 6vw;
+        display: block;
+        float: right;
+        margin-top: 0.732vw;
+        margin-right: 2.3vw;
+    }
+
+    #hamButton input[type=checkbox]:not(:checked)
+    {
+        background-image: url("menu.png");
+    }
+
+    #hamButton input[type=checkbox]:checked
+    {
+        background-image: url("menu.png");
+        background-color: rgba(0, 255, 255, 0);
+    }
+
+    #content
+    {
+        margin-top: 8vw;
+        width: 100%;
+        display: none;
+        position: fixed;
+        background: rgb(11, 11, 13,0.7);
+        backdrop-filter:blur(13px);
+    }
+    
+    #content a
+    {
+        color: white;
+        margin: 30px;
+        text-decoration: none;
+        float: none;
+        font-size: 3.5vw;
+    }
+
+    #content a:hover
+    {
+        background-color: rgb(22, 142, 135, 0);
+    }
+
+    #dropdown:hover #content
+    {
+        display: block;
+    }
+}
+#bgimg {
+    background-image: url(wwdc222.jpg);
+}
+.firsttxt {
+    background-color: rgba(0, 0, 0, 0.39);
+}
+.firsttxt:hover{
+    background-color:rgba(0, 0, 0, 0.16);
+    transition: 0.2s;
+}
+#smlimg1{
+    background-image:url(steve-jobs.jpg)
+}
+#smlimg2{
+    background-image:url(cpu.jpg)
+}
+.boxxi:hover{
+    box-shadow: 5px 5px rgba(0,0,0,0.5);
+    transition: 0.2s
+}
+.btnf{
+    background: rgb(11, 11, 13,0.7);
+}
+.btnf:hover{
+    background: rgb(11, 11, 13);
+    transition: 0.2s
+}
+.icon:hover{
+    border: 3.5px solid darkgray;
+    transition: 0.2s;
+}
+#darklight:hover {
+    border: 3.5px solid gray;
+    transition: 0.2s;    
+}
